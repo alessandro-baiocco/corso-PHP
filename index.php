@@ -19,17 +19,20 @@
     </style>
   </head>
   <body>
+    <?php 
+    $nome = 'fabio'; //variabile
+    ?>
     <form method="POST" action="PHP/esempio.php">
-      <label for="nome">Nome</label>
+      <label for="nome"><?php echo $nome; ?> </label>
       <input type="text" id="nome" name="nome" placeholder="inserisci nome" />
       <label for="cognome">Cognome</label>
       <input type="text" id="cognome" name="cognome" placeholder="inserisci cognome" />
       <input type="submit" value="invia dati" />
     </form>
-    <?php if(1 < 5): ?>
+    <?php if(1 < 5): ?>                <!-- blocco if else --> 
       this will show if expression is true
-    <?php else: ?>
-      this will show if expression is false
+    <?php else: ?> 
+      this will show if expression is false   
     <?php endif; ?>
 
 
