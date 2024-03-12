@@ -21,5 +21,7 @@ echo strpos($stringa , "ipsum"); // trovare una parola (è case sensitive)
 
 echo strpos($stringa , 6 , 10); // tagliare una string
 
+echo str_replace("CIAO" , "ipsum", $stringa)// rimpiazzare parole in una string
+
 
 ?>
